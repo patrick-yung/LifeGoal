@@ -11,8 +11,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.cencol.patrick.lifegoals_patrickyung.ui.screens.Category
-
+data class Category(
+    val id: String,
+    val title: String,
+    val iconRes: Int,
+    val achievementCount: Int,
+    val progress: Int
+)
 @Composable
 fun CategoryItem(
     category: Category,
